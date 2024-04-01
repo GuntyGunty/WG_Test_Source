@@ -1,0 +1,13 @@
+<div class="skill-modal">
+  <div class="skill-modal_name">
+    <img class="skill-modal_icon" src="{{skill.img}}" alt="Skill emblem for Unstoppable skill">
+    <p class="skill-modal_features">
+      <span>{{skill.name}}</span>
+      <span>{{skill.category}}</span>
+      <span>{{skill.grade}}</span>
+    </p>
+  </div>
+  <span class="skill-modal_selection" [ngClass]="{unselected: !skill.selection}">{{skill.selection ? "Selected" : "Unselected"}}</span>
+  <p class="skill-modal_description">{{skill.description}}</p>
+  <app-skill-property [skill]="skill"></app-skill-property>
+</div>

@@ -1,0 +1,23 @@
+@import "../../styles/utils.scss";
+
+ul {
+  display: flex;
+  margin-bottom: $space-m;
+
+  li {
+    margin-right: $space-m;
+    padding: $space-xs $space-s;
+    background-color: $color-bg;
+    border-radius: 8px;
+    opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+
+@import "../../styles/utils.scss";
+
+.skill-modal {
+  display: flex;
+  flex-direction: column;
+  max-width: 560px;
+  min-height: 512px;
+  background-color: $color-bg;
+  background-image: url("/../../assets/img/img_bg.png");
+  padding: 12px $space-s;
+
+  &_name {
+    display: flex;
+    align-items: center;
+    margin-bottom: $space-s;
+  }
+
+  &_icon {
+    max-width: 60px;
+    margin-right: $space-m;
+  }
+
+  &_features {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    font-size: 16px;
+
+    :nth-child(3),
+    :nth-child(2) {
+      color: $color-green;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    :nth-child(3) {
+      color: $color-yellow;
+      opacity: 0.6;
+    }
+  }
+
+  &_selection {
+    display: inline-flex;
+    align-items: center;
+    color: $color-yellow;
+    background-color: $color-bg-lighter;
+    text-transform: uppercase;
+    padding: $space-s;
+    &::before {
+      content: '';
+      @include square(16px);
+      display: block;
+      background-image: url("/../../assets/img/check.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: $space-xs;
+    }
+
+    &.unselected {
+      filter: grayscale(90%);
+      &::before {
+        visibility: hidden;
+        width: 0;
+      }
+    }
+  }
+
+  &_description {
+    padding: $space-s;
+  }
+}
+

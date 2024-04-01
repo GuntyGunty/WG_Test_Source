@@ -1,0 +1,28 @@
+//Color Variables//
+
+$color-transparent: rgba(255, 0, 0, 0);
+$color-bg: #080b14;
+$color-bg-lighter: #202430;
+$color-white: #dedede;
+$color-green: #3fc5a0;
+$color-yellow: #fecb66;
+
+//Space Variables//
+
+$space-xs: 5px;
+$space-s: 10px;
+$space-m: 15px;
+$space-l: 20px;
+
+//Mixins//
+
+@mixin square($number) {
+  width: $number;
+  height: $number;
+}
+
+@mixin centered {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

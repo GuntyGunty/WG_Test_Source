@@ -1,0 +1,76 @@
+@import "../../styles/utils.scss";
+
+.skill-property {
+  padding: $space-s;
+  transition: 0.3s;
+  background-color: $color-transparent;
+  opacity: 1;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-bg;
+    opacity: 0.8;
+  }
+
+  &_name {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: $space-s;
+  }
+
+  &_fullness {
+    position: relative;
+    @include square(16px);
+    background-image: linear-gradient(0deg, $color-bg 50%, $color-transparent 50%),
+                      linear-gradient(90deg, $color-bg 50%, $color-white 50%);
+    border-radius: 100%;
+    margin-right: $space-s;
+
+    &::before {
+      content: '';
+      @include centered();
+      @include square(22px);
+      position: absolute;
+      border-radius: 100%;
+      border: 1px solid $color-white;
+    }
+  }
+
+  &_wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_percentage {
+    color: $color-green;
+    margin-left: $space-xs;
+  }
+
+  &_description {
+    position: relative;
+    text-wrap: nowrap;
+    margin-right: $space-xs;
+  }
+
+  &_divider {
+    display: flex;
+    flex-grow: 1;
+    max-width: calc(100% - 12px);
+    height: 1px;
+    background-color: $color-white;
+    opacity: 0.2;
+  }
+}
+
+.skill-property:nth-child(2) {
+  .skill-property_fullness {
+    background-image: linear-gradient(90deg, $color-bg 50%, $color-transparent 50%),
+                      linear-gradient(90deg, $color-bg 50%, $color-white 50%);
+  }
+}
+

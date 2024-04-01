@@ -1,0 +1,33 @@
+@import "components/skill-modal/skill-modal.component.scss";
+@import "components/skill-property/skill-property.component.scss";
+@import "components/skills/skills.component.scss";
+
+// //Global//
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  color: #dedede;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
