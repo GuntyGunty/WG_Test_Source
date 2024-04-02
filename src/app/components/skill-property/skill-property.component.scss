@@ -67,6 +67,8 @@
   }
 }
 
+// .skill-property need be rewritten as a component and remove nth-child: code
+
 .skill-property:nth-child(2) {
   .skill-property_fullness {
     background-image: linear-gradient(90deg, $color-bg 50%, $color-transparent 50%),

@@ -51,7 +51,7 @@
       content: '';
       @include square(16px);
       display: block;
-      background-image: url("/../../assets/img/check.png");
+      background-image: url("/../../assets/img/img_3.png");
       background-size: contain;
       background-repeat: no-repeat;
       margin-right: $space-xs;
@@ -70,4 +70,3 @@
     padding: $space-s;
   }
 }
-

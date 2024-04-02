@@ -1,12 +1,10 @@
 <section>
   <ul>
     <li *ngFor="let skill of filteredSkillList; index as index;"
-    [ngClass]="{selected: index === activeIndex}"
-    (click)="activeIndex = index"><app-skill-nav [skill]="skill"></app-skill-nav></li>
+        [ngClass]="{selected: index === activeIndex}"
+        (click)="activeIndex = index"><app-skill-nav [skill]="skill"></app-skill-nav></li>
   </ul>
   <ng-container *ngFor="let skill of filteredSkillList;index as index;">
     <app-skill-modal *ngIf="index === activeIndex" [skill]="skill"></app-skill-modal>
   </ng-container>
 </section>
-
-

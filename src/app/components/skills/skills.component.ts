@@ -1,4 +1,4 @@
-import { Component, inject, ChangeDetectionStrategy } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule, NgClass } from '@angular/common';
 import { SkillModalComponent } from '../skill-modal/skill-modal.component';
 import { SkillNavComponent } from '../skill-nav/skill-nav.component';
@@ -17,7 +17,6 @@ import { Skill } from '../../skill';
   providers: [
     SkillService,
   ],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SkillsComponent {
   activeIndex = 0;
